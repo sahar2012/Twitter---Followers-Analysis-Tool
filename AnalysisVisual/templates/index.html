@@ -1,0 +1,21 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+</head>
+
+<body>
+    <center>
+    <br>
+    <img src="{% static 'images/Twitter_bird_icon.png' %}" height="50" width="50">
+    <h1>Followers Analysis Tool</h1>
+    <br>
+    <form action="/index/" id="home_form" method="post"> 
+        {% csrf_token %}
+        <input type="text" name="TestInputString" placeholder="Enter test input(CSV format)">
+        <p>
+        <button type="submit" name="_submit" class="btn">Submit</button>
+    </form>
+    </center>
+</body>
+</html>
