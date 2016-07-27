@@ -17,10 +17,10 @@ def index(request):
 		ids = testInputString.split(",")
 
 
-		t = Twython(app_key='YPnGVD2T9wh5zHc10MI7ST2iq',
-	    	app_secret='gtqtpHTnESPVs35xljv0V83nsP1Avv3gH9i0fFRJOeJGk1ik01',
-	    	oauth_token='324783241-jEsiVUjaWmzQwRv9rDXT1c5T5z8nacooRCPoHnE8',
-	    	oauth_token_secret='kuGnX0o0VdEsGJYIsuymeB6tqniOf7956VPIJQTQ0cCaZ')
+		t = Twython(app_key=APP_KEY,
+	    	app_secret=APP_SECRET,
+	    	oauth_token=OUATH TOKEN,
+	    	oauth_token_secret=OAUTH TOKEN SECRET)
 		followers = []
 		next_cursor = -1
 		followersDict = dict()
